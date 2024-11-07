@@ -1,120 +1,78 @@
-body{
-    margin: 0 auto;
-    max-width: 1200px;
-    font-family: sans-serif;
-    color: dimgray;
-}
-
-img{
-    max-width: 100%;
+/*RESET*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 /*HEADER*/
 header{
-    display: inline-flex;
-    justify-content: center;
-    padding: 0px 0 10px 0;
-    padding-left: 10px;
-    border-radius: 10px;
-}
-.titysub{
-    padding-top: 15px;
     display: flex;
-    padding-left: 25px;
-    
+    padding: 10px 10px 0;
+    background-color: aliceblue;
+    padding-bottom: 10px;
 }
-.titulo{
-    border-radius: 20px;
-    width: 300px;
-    padding-left: 0px;
-    padding-top: 27px;
-}
-.subtitulo{
-    color: cadetblue;
-}
-.espacioblanco{
-    padding-left: 450px;
-    
 
+.logo{
+    padding-right: 25px;
 }
 .logo img{
-    background: white;
-    width: 65px;
-    height: 65px;
-    padding-top: 30px;
-    border-radius: 10px 10px;
+    width: 100%;
+    height: 50px;
 }
-.logoimg img{
-    width: 20px;
-    height: 20px;
-    display: flex;
-    padding-left: 20px;
-    padding-top: 19px;
+
+.titulo{
+    padding-top: 10px;
 }
+.titulo img{
+    width: 100%;
+    height: 30px;
+}
+
+/*CONTACTO*/
 .contacto{
-
-color: black;
-padding-left: 10px;
-padding-right: 20px;
+   padding: 10px;
+   display: flex;
+   border-bottom: 1px solid;
 }
-.logocontacto{
+
+.imagenes img{
+    width: 20px;
     display: flex;
-    background-color: mintcream;
-    border-radius: 20px;
-    border: 2px solid grey;
-    padding-left: 0px;
-
+    padding: 3px;
 }
 
+.texto-contacto{
+    padding-top: 6px;
+    padding-left: 5px;
+    color: darkslategrey;
+}
+.texto-contacto h5{
+    padding-bottom: 8px;
+}
 
-/*MAIN*/
+/*CONTAINER*/
 .container-items{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-} 
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(
+            100px,
+            1fr
+        )
+    );
+    gap: 16px;
+}
 
 .item{
-    border-radius: 10px;
+    width: 100px;
+    height: 180px;
+    padding-top: 16px;
+    padding-left: 8px;
+    text-align: center;
 }
-
-.item:hover{
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
-}
-
-.info-figure{
-    padding: 15px 30px;
-    line-height: 2;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
 .item img{
-    width: 120%;
-    height: 350px;
+    width: 100px;
+    height: 150px;
     object-fit: cover;
-    border-radius: 10px 10px 0 0;
-    transition: all .5s;
-}
-
-.item figure{
-    overflow: hidden;
-}
-
-.item:hover img{
-    transform: scale(1.1);
-}
-
-.precio{
-    font-size: 18;
-    font-weight: 900;
-}
-
-.info-figure button{
-    border: none;
-    background: black;
-    color: white;
-    padding: 15px 10px;
-    cursor: pointer;
 }
