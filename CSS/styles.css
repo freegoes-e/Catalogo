@@ -33,7 +33,7 @@ header{
 .contacto{
    padding: 10px;
    display: flex;
-   border-bottom: 1px solid;
+   border-bottom: 0px solid;
 }
 
 .imagenes img{
@@ -49,6 +49,29 @@ header{
 }
 .texto-contacto h5{
     padding-bottom: 8px;
+}
+
+/*ENCABEZADOS DAMA Y HOMBRE*/
+.enc-dama h3{
+    text-align: center;
+    padding: 3px;
+    color: darkslategray;
+}
+.enc-dama{
+    border: 3px solid gainsboro;
+    background-color: aliceblue;
+    padding: 10px;
+}
+
+.enc-hombre h3{
+    text-align: center;
+    padding: 3px;
+    color: darkslategray;
+}
+.enc-hombre{
+    border: 3px solid gainsboro;
+    background-color: aliceblue;
+    padding: 10px;
 }
 
 /*CONTAINER*/
@@ -67,7 +90,6 @@ header{
 .item{
     width: 100px;
     height: 180px;
-    padding-top: 16px;
     padding-left: 8px;
     text-align: center;
 }
@@ -75,4 +97,9 @@ header{
     width: 100px;
     height: 150px;
     object-fit: cover;
+}
+
+/*ESPACIOS*/
+.espacio{
+    height: 60px;
 }
