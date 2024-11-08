@@ -104,3 +104,10 @@ header{
 .espacio{
     height: 60px;
 }
+
+/*CREADOR*/
+.creador{
+    text-align: center;
+    padding-top: 35px;
+    padding-bottom: 5px;
+}
