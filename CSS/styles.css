@@ -97,6 +97,10 @@ header{
 
 /*CONTAINER*/
 .container-items{
+    padding-top: 10px;
+    padding-left: 3px;
+    padding-right: 3px;
+    background-color: white;
     display: grid;
     grid-template-columns: repeat(
         auto-fit,
@@ -105,14 +109,18 @@ header{
             1fr
         )
     );
-    gap: 16px;
+    gap: 2px;
 }
 
 .item{
-    width: 100px;
-    height: 180px;
-    padding-left: 8px;
+    width: 110px;
+    height: 208px;
+    padding-left: 4px;
+    padding-right: 4px;
+    background-color: white;
     text-align: center;
+    border: 2px solid dimgray;
+    border-radius: 10px;
 }
 .item img{
     width: 100px;
